@@ -12,12 +12,13 @@ In [5] is presented a Convolutional Variational Autoencoder (Convolutional VAE) 
 # Proposed Model
 
 The proposed model is an end-to-end process to compress and decompress speech audio. The audio inputs are converted to spectrograms through STFT and the Neural Network is trained with a training dataset. After that, the model can receive an audio input, extract its spectrogram, and compress it. The compression and decompression tasks are presented in Figure 1. It’s main module is an Autoencoder Convolutional Neural Network based on the model created by [8]. The encoder is composed by 3 convolutional layers and 3 MaxPooling layers stacked, with the respective sizes adjusted to the input sizes. The decoder has 4 convolutional layers and 3 UpSampling layers stacked. The overall network is represented on Figure 2.  The activation function used in the convolutional layers is the Rectified Linear Unit (ReLU). The training data is composed by speech spectrograms created through Short-Time Fourier Transform (STFT) from Librispeech dataset audio files. The encoder output is the latent representation of the input spectrograms, or the compressed data. The decoder takes this compressed data and decompress it to a spectrogram.
-
+<p align="center">
 ![Figure 1](https://user-images.githubusercontent.com/4576500/136803401-14b85571-c10c-4738-8254-e4d751c0656a.png)
 Figure 1 - End-to-end Compression and Decompression Processes
 
 ![conv_autoencoder](https://user-images.githubusercontent.com/4576500/136803621-7d2ccc47-c09e-41fd-805d-544c0f9a8a05.png)
 Figure 2 - Autoencoder Convolutional Neural Network Architecture
+</p>
 
 # Experiment
 
