@@ -28,7 +28,10 @@ Figure 2 - Autoencoder Convolutional Neural Network Architecture
 The proposed model is implemented and tested in 5 phases, represented in Figure 3.
 
 ![diagram_exp](https://user-images.githubusercontent.com/4576500/136803771-cfedf3b3-8289-478b-8b35-f28ae4b2737d.png)
+<p align="center">
 Figure 3 - Experiment phases
+</p>
+
 
 Phase 1 - Data Preparation
 
